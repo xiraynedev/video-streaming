@@ -1,29 +1,12 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import { connectDB } from "../../utils/functions";
 
 const http = require("http");
 const { ObjectId } = require("mongodb");
-const mongoose = require("mongoose");
 const { Video } = require("../../models/Video");
-const dbHost = process.env.dbHost;
+
 const videoStorageHost = process.env.videoStorageHost;
 const videoStoragePort = process.env.videoStoragePort;
-
-function connectDB() {
-  mongoose.connect(dbHost);
-  const connection = mongoose.connection;
-
-  connection.on("connected", () => {
-    console.log("Database connected successfully.");
-  });
-
-  connection.on("disconnected", () => {
-    console.log("Database disconnected successfully.");
-  });
-
-  connection.on("error", () => {
-    console.error("Connection error has occurred.");
-  });
-}
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   connectDB();

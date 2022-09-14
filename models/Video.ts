@@ -5,7 +5,6 @@ const videoSchema = new mongoose.Schema({
   videoPath: String,
 });
 
-const Video = mongoose.model('Videos', videoSchema);
+const Video = mongoose.model('Video', videoSchema);
 
 export { Video };
-
