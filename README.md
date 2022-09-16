@@ -10,4 +10,4 @@
 
 # video-streaming
 
-This project is a Next.js and TypeScript microservice that works with MongoDB to acquire video metadata. It then feeds the data to the Azure Storage microservice for video retrieval and streaming.
+This project is a Next.js and TypeScript microservice that works with MongoDB to acquire video metadata. It then sends a direct message to the video storage microservice to retrieve the video from Azure Storage and stream it back to the video streaming microservice.
