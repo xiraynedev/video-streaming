@@ -1,0 +1,9 @@
+img {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 370px) {
+  html {
+    width: fit-content;
+  }
+}
