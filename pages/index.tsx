@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import Stack from '@mui/material/Stack';
 import { VideoImage } from '../components/VideoImage/VideoImage';
 
 export default function Home() {
@@ -24,13 +24,6 @@ export default function Home() {
         flexWrap='wrap'
         position='relative'
       >
-        {/* sample vid */}
-        <VideoImage
-          href='/api/video?id=62eac016f28ab57c7a32cc3b'
-          src='/images/sample-vid.webp'
-          alt='sample video image'
-          priority
-        />
         {/* cheetah */}
         <VideoImage
           href='/api/video?id=636bd72a98b98d3d44183405'
