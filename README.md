@@ -5,11 +5,10 @@
 ![Next.js](https://img.shields.io/badge/Next.js-13.0.0-lightgrey)
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.7.4-blue)
 
-
 # video-streaming
 
-This project is a Next.js and TypeScript microservices application that works with MongoDB to acquire video metadata. It then sends a direct message to the video storage microservice to retrieve the video from Azure Storage and stream it back to the client.
+Video Streaming is a Next.js and TypeScript microservices application that works with MongoDB to acquire video metadata. It then sends a direct message to the video storage microservice to retrieve the video from Azure Storage and stream it back to the client.
 
-The project is currently a work in progress. The next steps will be to provision the infrastructure with Terraform, and then set up a Kubernetes cluster to manage the containers. 
+The application is currently a work in progress. The next steps will be to provision the infrastructure with Terraform, and then set up a Kubernetes cluster to manage the containers.
 
-![project screenshot](project-screenshot.webp)
+![application screenshot](application-screenshot.webp)
